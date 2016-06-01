@@ -23,9 +23,9 @@ It's up to you to determine the order to appear when stacked based on sizes and 
 It's up to you to decide how to handle the case where two shapes cover the same area.
 i.e. Square (side:4) and Rectangle (length:4,width:4)
 
-ShapeStackTest cases:
-  Assert(Square(4), Circle(4), Triangle(4,10), "T[S[C]]")
-  Assert(Square(4), Circle(6), Rectangle(2,4), "C[S[R]]")
-  Assert(Triangle(4,10), Circle(20)),"C[T]")
-  Assert(Square(4), Rectangle(4, 4), ???)
+###ShapeStackTest cases:
+Assert(Square(4), Circle(4), Triangle(4,10), "T[S[C]]")
+Assert(Square(4), Circle(6), Rectangle(2,4), "C[S[R]]")
+Assert(Triangle(4,10), Circle(20)),"C[T]")
+Assert(Square(4), Rectangle(4, 4), ???)
 
