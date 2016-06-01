@@ -7,6 +7,11 @@ import java.lang.annotation.Documented;
  */
 public class Triangle extends Shape{
 
+  /**
+   * Creates a new triangle based on two values
+   * @param sideOne The base of our Isoceles triangle
+   * @param sideTwoThree the identical left and right sides of our Isoceles triangle
+   */
   public Triangle(int sideOne, int sideTwoThree) {
     sides = new int[]{sideOne, sideTwoThree};
     setArea();

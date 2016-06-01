@@ -2,8 +2,13 @@ package shape;
 
 public class Rectangle extends Shape{
 
-  public Rectangle(int sideOne, int sideTwo) {
-    sides = new int[]{sideOne, sideTwo};
+  /**
+   * Creates a new rectangle based on two values
+   * @param length The length of the rectangle equal on two sides.
+   * @param width The width of the rectangle equal on two sides.
+   */
+  public Rectangle(int length, int width) {
+    sides = new int[]{length, width};
     setArea();
   }
 
