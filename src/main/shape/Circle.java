@@ -1,7 +1,6 @@
 package shape;
 
 public class Circle extends Shape{
-  private double shapeArea;
   private int diameter;
 
   public Circle(int _diameter) {

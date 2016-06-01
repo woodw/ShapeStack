@@ -1,16 +1,14 @@
 package shape;
 
 public class Square extends Shape{
-  private double shapeArea;
-  private int equiSide;
 
   public Square(int sideOne){
-    equiSide = sideOne;
+    sides = new int[]{sideOne};
     setArea();
   }
 
   private void setArea(){
-    shapeArea = Math.pow(equiSide,2);
+    shapeArea = Math.pow(sides[0],2);
   }
 
   public double getArea() {

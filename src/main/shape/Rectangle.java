@@ -1,18 +1,14 @@
 package shape;
 
 public class Rectangle extends Shape{
-  private double shapeArea;
-  private int sideX;
-  private int sideY;
 
   public Rectangle(int sideOne, int sideTwo) {
-    sideX = sideOne;
-    sideY = sideTwo;
+    sides = new int[]{sideOne, sideTwo};
     setArea();
   }
 
   private void setArea(){
-    shapeArea = sideX*sideY;
+    shapeArea = sides[0]*sides[1];
   }
 
   public double getArea() {
