@@ -4,7 +4,7 @@ public class Circle extends Shape{
   private int diameter;
 
   /**
-   * Creates a new triangle based on two values
+   * Creates a new Circle based on two values
    * @param _diameter The diameter of the circle which is used to calculate shape area.
    */
   public Circle(int _diameter) {
