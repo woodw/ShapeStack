@@ -1,6 +1,6 @@
 package shape;
 
-public class Rectangle {
+public class Rectangle extends Shape{
   private double shapeArea;
   private int sideX;
   private int sideY;

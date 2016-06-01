@@ -5,7 +5,7 @@ import java.lang.annotation.Documented;
 /**
  * Created by billwood on 6/1/16.
  */
-public class Triangle {
+public class Triangle extends Shape{
   private double shapeArea;
   private int sideA;
   private int sideBC;

@@ -1,10 +1,10 @@
 package shape;
 
-public class Square {
+public class Square extends Shape{
   private double shapeArea;
   private int equiSide;
 
-  public Square(int sideOne) {
+  public Square(int sideOne){
     equiSide = sideOne;
     setArea();
   }
