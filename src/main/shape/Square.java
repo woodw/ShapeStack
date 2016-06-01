@@ -16,4 +16,8 @@ public class Square extends Shape{
   public double getArea() {
     return shapeArea;
   }
+
+  public String toString(){
+    return "S[]";
+  }
 }

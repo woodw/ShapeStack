@@ -18,4 +18,8 @@ public class Rectangle extends Shape{
   public double getArea() {
     return shapeArea;
   }
+
+  public String toString(){
+    return "R[]";
+  }
 }

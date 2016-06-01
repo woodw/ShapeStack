@@ -26,4 +26,8 @@ public class Triangle extends Shape{
   public double getArea() {
     return shapeArea;
   }
+
+  public String toString(){
+    return "T[]";
+  }
 }

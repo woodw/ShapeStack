@@ -20,4 +20,8 @@ public class Circle extends Shape{
   public double getArea() {
     return shapeArea;
   }
+
+  public String toString(){
+    return "C[]";
+  }
 }
