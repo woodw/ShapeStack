@@ -1,0 +1,9 @@
+***Determine the problem****
+There is an object ShapeStacker
+  --input: different shapes
+    --Square with length 10
+    --Triangle with side 20 & sides 22 (isosceles? spelling?)
+
+  --performance: sort the shapes
+    -- Large shape goes on the bottom (0?), small shape goes on top (n?)
+      -- T[C[S]]
