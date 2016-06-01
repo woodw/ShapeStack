@@ -1,8 +1,11 @@
 package stack;
 
 import shape.Shape;
+import shape.Triangle;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -23,6 +26,25 @@ public class ShapeStacker {
   }
 
   public void setStack(List<Shape> newStack) {
-    this.theStack = newStack;
+    theStack = newStack;
+  }
+
+  public String stack() {
+    Collections.sort(theStack);
+    return this.toString();
+  }
+
+  public String toString(){
+    String stackString = "";
+    for(Shape item : theStack){
+      if(stackString.length()>0){
+        stackString = stackString.replace("[]", String.format("[%s]", item.toString()));
+      }
+      else{
+        stackString = item.toString();
+      }
+    }
+    stackString = stackString.replace("[]","");
+    return stackString;
   }
 }

@@ -36,8 +36,8 @@ public class ShapeStackerTest {
   public void testNullConstructorPasses() throws Exception{
     mockShapeStacker = new ShapeStacker();
     assertNotNull(mockShapeStacker);
-    //Because we don't push or pop we don't need to have a stack
-    //Unless a new collection of shapes is given
+
+    //Based on the requirements I do not need to pop or push individual stack shapes.
     assertNull(mockShapeStacker.getStack());
   }
 
@@ -45,8 +45,28 @@ public class ShapeStackerTest {
   public void testCreateNewStack(){
     mockShapeStacker = new ShapeStacker();
     assertNull(mockShapeStacker.getStack());
+
     Collections.addAll(newShapes, new Square(4), new Triangle(4, 10), new Rectangle(2, 4));
     mockShapeStacker.setStack(newShapes);
     assertEquals(3,mockShapeStacker.getStack().size());
+  }
+
+  @Test
+  public void testPrintStack(){
+    Collections.addAll(newShapes, new Square(4), new Circle(4), new Triangle(4, 10));
+    mockShapeStacker = new ShapeStacker(newShapes);
+    assertEquals("T[S[C]]", mockShapeStacker.stack());
+
+    newShapes.clear();
+    Collections.addAll(newShapes, new Square(4), new Circle(6), new Rectangle(2, 4));
+    assertEquals("C[S[R]]", mockShapeStacker.stack());
+
+    newShapes.clear();
+    Collections.addAll(newShapes, new Triangle(4, 10), new Circle(20));
+    assertEquals("C[T]", mockShapeStacker.stack());
+
+    newShapes.clear();
+    Collections.addAll(newShapes, new Square(4), new Rectangle(4, 4));
+    assertTrue(mockShapeStacker.stack().equals("R[S]")||mockShapeStacker.stack().equals("S[R]"));
   }
 }
