@@ -17,6 +17,11 @@ public class SquareTest {
   }
 
   @Test
+  public void constructorPasses(){
+    assertNotNull(mockSquare);
+  }
+
+  @Test
   public void testAreaValue(){
     assertEquals(16.0,mockSquare.getArea(),0);
   }
