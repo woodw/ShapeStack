@@ -11,13 +11,15 @@ import static org.junit.Assert.*;
 public class RectangleTest {
   public Rectangle mockRectangle;
 
-  @Before
-  public void setUp() throws Exception {
-    mockRectangle = new Rectangle(2, 4);
+  @Test(expected=IllegalArgumentException.class)
+  public void testConstructorNegativeIllegalArgumentException() {
+    mockRectangle = new Rectangle(-1, 7);
+    mockRectangle = new Rectangle(5, -5);
   }
 
   @Test
   public void testAreaValue(){
+    mockRectangle = new Rectangle(2, 4);
     assertEquals(8.0,mockRectangle.getArea(),0);
     mockRectangle = new Rectangle(10, 4);
     assertEquals(40.0,mockRectangle.getArea(),0);

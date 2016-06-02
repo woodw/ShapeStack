@@ -11,18 +11,14 @@ import static org.junit.Assert.*;
 public class SquareTest {
   public Square mockSquare;
 
-  @Before
-  public void setUp() throws Exception {
-    mockSquare = new Square(4);
-  }
-
-  @Test
-  public void constructorPasses(){
-    assertNotNull(mockSquare);
+  @Test(expected=IllegalArgumentException.class)
+  public void testConstructorNegativeIllegalArgumentException() {
+    mockSquare = new Square(-2);
   }
 
   @Test
   public void testAreaValue(){
+    mockSquare = new Square(4);
     assertEquals(16.0,mockSquare.getArea(),0);
     mockSquare = new Square(10);
     assertEquals(100.0,mockSquare.getArea(),0);

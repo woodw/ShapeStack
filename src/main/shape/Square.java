@@ -7,8 +7,12 @@ public class Square extends Shape{
    * @param sideOne One side value which is equal with all sides
    */
   public Square(int sideOne){
-    sides = new int[]{sideOne};
-    setArea();
+    if(sideOne<0){
+      throw new IllegalArgumentException("length must be a positive integer");
+    } else {
+      sides = new int[]{sideOne};
+      setArea();
+    }
   }
 
   private void setArea(){
