@@ -19,5 +19,7 @@ public class RectangleTest {
   @Test
   public void testAreaValue(){
     assertEquals(8.0,mockRectangle.getArea(),0);
+    mockRectangle = new Rectangle(10, 4);
+    assertEquals(40.0,mockRectangle.getArea(),0);
   }
 }

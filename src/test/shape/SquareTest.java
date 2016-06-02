@@ -24,6 +24,8 @@ public class SquareTest {
   @Test
   public void testAreaValue(){
     assertEquals(16.0,mockSquare.getArea(),0);
+    mockSquare = new Square(10);
+    assertEquals(100.0,mockSquare.getArea(),0);
   }
 
 }

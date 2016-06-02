@@ -13,15 +13,22 @@ public class Triangle extends Shape{
    * @param sideTwoThree the identical left and right sides of our Isoceles triangle
    */
   public Triangle(int sideOne, int sideTwoThree) {
-    sides = new int[]{sideOne, sideTwoThree};
-    setArea();
+      sides = new int[]{sideOne, sideTwoThree};
+      setArea();
   }
 
-  /*Triangles area can be determined by Area = 1/2 (sideA)(height)
-  *height of an isoceles triangle Math.sqrt( (b^2) - (1/4) (a^2) )
-  *put it together and we have (1/2)(a^2)(Math.sqrt((b^2/a^2) - (1/4)))*/
+  /*Solving an Isosceles Triangle
+  * An Isosceles triangle can be solved just like a rectangle with length and width
+  * width: 1/2 base of Isosceles triangle
+  * length: given width and the hypotenuse (one of the two equal sides)
+  *    solve: length = Math.Sqrt(hypotenuse^2 - width^2)
+  * Area: length * width
+  * */
   private void setArea(){
-    shapeArea = (.5)*Math.pow(sides[0],2)*Math.sqrt(((Math.pow(sides[1],2))/(Math.pow(sides[0],2)))-(.25));
+    double _sideA = sides[0]/2;
+    double _sideC = sides[1];
+    double _sideB = Math.sqrt(Math.pow(_sideC, 2)-Math.pow(_sideA, 2));
+    shapeArea = _sideA*_sideB;
   }
 
   public double getArea() {
