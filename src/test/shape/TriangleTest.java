@@ -17,6 +17,11 @@ public class TriangleTest {
     mockTriangle = new Triangle(4, 10);
   }
 
+  @Test(expected=IllegalArgumentException.class)
+  public void testConstructorIllegalArgumentException() {
+    mockTriangle = new Triangle(10, 4);
+  }
+
   @Test
   public void testAreaValue(){
     assertEquals(19.595917942265423,mockTriangle.getArea(),0);

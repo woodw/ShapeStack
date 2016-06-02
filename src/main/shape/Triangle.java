@@ -13,8 +13,12 @@ public class Triangle extends Shape{
    * @param sideTwoThree the identical left and right sides of our Isoceles triangle
    */
   public Triangle(int sideOne, int sideTwoThree) {
+    if(sideTwoThree<=sideOne) {
+      throw new IllegalArgumentException("hypotenuse needs to be greater than 1/2 the base: " + sideOne);
+    }else {
       sides = new int[]{sideOne, sideTwoThree};
       setArea();
+    }
   }
 
   /*Solving an Isosceles Triangle
