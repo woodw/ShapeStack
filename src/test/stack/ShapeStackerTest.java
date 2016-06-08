@@ -28,14 +28,12 @@ public class ShapeStackerTest {
     Collections.addAll(newShapes, new Square(4), new Triangle(4, 10), new Circle(7), new Rectangle(2, 4));
     mockShapeStacker = new ShapeStacker(newShapes);
 
-    assertNotNull(mockShapeStacker);
     assertEquals(4,mockShapeStacker.getStack().size());
   }
 
   @Test
   public void testNullConstructorPasses() throws Exception{
     mockShapeStacker = new ShapeStacker();
-    assertNotNull(mockShapeStacker);
 
     //Based on the requirements I do not need to pop or push individual stack shapes.
     assertNull(mockShapeStacker.getStack());

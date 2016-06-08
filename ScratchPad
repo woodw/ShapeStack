@@ -3,7 +3,47 @@ There is an object ShapeStacker
   --input: different shapes
     --Square with length 10
     --Triangle with side 20 & sides 22 (isosceles? spelling?)
-
-  --performance: sort the shapes
+    --Circle diameter 7
+  --performance: sort the shapes "you call stack!"
     -- Large shape goes on the bottom (0?), small shape goes on top (n?)
       -- T[C[S]]
+  --print back sorted stack list left to right
+
+  --ShapeStackerTest
+  --ShapeStacker
+  --Square
+  --Circle
+  --Rectangle
+  --Triangle
+
+  Assert(Square(4), Circle(4), Triangle(4,10), "T[S[C]]")
+  Assert(Square(4), Circle(6), Rectangle(2,4), "C[S[R]]")
+  Assert(Triangle(4,10), Circle(20)),"C[T]")
+  Assert(Square(4), Rectangle(4, 4), ???)
+
+  ??Do the items need to be given all at once or should they be done one at a time.
+
+***First things***
+I think the easiest thing to do is find the area of the shape. Then I should be able to compare the area's between shapes.
+-Create a class for each shape
+  --create a test because I need to make sure setting area is a valid input/output method
+
+***Second Thing****
+So now I make a ShapeStacker... lets see
+im going to have a ShapeStacker object... maybe
+you have a construct where you accept multiple elements...
+But I guess you should also add new sets of shapes to ...
+than you have the command stack and stack will sort and return print the version...
+
+***Things Things***
+I was able to get together with java developers today from Impact Radius and they showed me some decisions I made that could use retooling. Also there was a possible assert I did not plan.
+-getting rid of redundant asserts
+-modify JUNIT test to use the undertest,mock,and stub items in standard practice.
+-look at moving sides variable to mid class for square, rectangle, triangle
+-decide if rectangle should be square... I could cut down on code this way.
+-is there a mid class for circle.
+-modify stack to instantiate its own array instead of pointing to array from the test.
+-assert getStack from empty constructor doesn't throw null pointer
+-decide how to represent shapes of similar type in the stack print
+-decide what should appear if stack is empty "nothing" maybe?
+
