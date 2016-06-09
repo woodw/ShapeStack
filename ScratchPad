@@ -47,3 +47,22 @@ I was able to get together with java developers today from Impact Radius and the
 -decide how to represent shapes of similar type in the stack print
 -decide what should appear if stack is empty "nothing" maybe?
 
+? Is List<> a mock object in ShapeStacker
+  I dont think so. It would be useful to make a mock object if I wanted to return a specified value when a list method
+  is called using "when". Currently I call clear... but soon I will not be doing that.
+
+* Code Snippet:
+if(sideTwoThree<=sideOne) {
+      throw new IllegalArgumentException("hypotenuse needs to be greater than 1/2 the base: " + sideOne);
+    } else
+      if(sideOne<0 || sideTwoThree<0){
+        throw new IllegalArgumentException("lengths must be positive integers");
+      } else {
+      sides = new int[]{sideOne, sideTwoThree};
+      setArea();
+    }
+  }
+A assert test for a negative hypotenuse will never fail. Not that it can't but because the first check will throw an
+exception is hypotenuse is less than base. And Base can not be negative. Currently the only way is for base to equal zero
+which will be resolved.
+

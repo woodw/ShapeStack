@@ -13,12 +13,12 @@ public class CircleTest {
   private Circle underTest;
 
   @Test(expected=IllegalArgumentException.class)
-  public void testConstructorNegativeIllegalArgumentException() {
+  public void shouldThrowExceptionForNegativeLength() {
     underTest = new Circle(-3);
   }
 
   @Test
-  public void testAreaValue(){
+  public void shouldReturnCorrectCalculatedArea(){
     underTest = new Circle(7);
     assertEquals(28.274333882308138,underTest.getArea(),0);
     underTest = new Circle(4);

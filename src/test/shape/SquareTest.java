@@ -17,7 +17,7 @@ public class SquareTest {
   }
 
   @Test
-  public void testAreaValue(){
+  public void shouldReturnCorrectCalculatedArea(){
     underTest = new Square(4);
     assertEquals(16.0,underTest.getArea(),0);
     underTest = new Square(10);
