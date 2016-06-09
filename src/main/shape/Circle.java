@@ -8,7 +8,7 @@ public class Circle extends Shape{
    * @param _diameter The diameter of the circle which is used to calculate shape area.
    */
   public Circle(int _diameter) {
-    if(_diameter<0){
+    if(_diameter<=0){
       throw new IllegalArgumentException("diameter must be a positive integers");
     } else {
       diameter = _diameter;

@@ -66,3 +66,7 @@ A assert test for a negative hypotenuse will never fail. Not that it can't but b
 exception is hypotenuse is less than base. And Base can not be negative. Currently the only way is for base to equal zero
 which will be resolved.
 
+*I have decided to not allow zero for length. there is a bit of a pickle here... my shape lengths are whole numbers.
+technically .3 for length would be 0 in length. Semantics I guess. The kata refers to int values are arguments.
+
+

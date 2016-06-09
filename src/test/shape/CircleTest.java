@@ -13,8 +13,13 @@ public class CircleTest {
   private Circle underTest;
 
   @Test(expected=IllegalArgumentException.class)
-  public void shouldThrowExceptionForNegativeLength() {
+  public void shouldThrowExceptionForNegativeDiameter() {
     underTest = new Circle(-3);
+  }
+
+  @Test(expected=IllegalArgumentException.class)
+  public void shouldThrowExceptionForZeroDiameter() {
+    underTest = new Circle(0);
   }
 
   @Test

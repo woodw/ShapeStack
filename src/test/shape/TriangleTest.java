@@ -18,11 +18,16 @@ public class TriangleTest {
   }
 
   @Test(expected=IllegalArgumentException.class)
-  public void shouldThrowExceptionForNegativeBase() {
+  public void shouldThrowExceptionForNegativeBase(){
     underTest = new Triangle(-4, 9);
-    // Hypotenuse must be greater than base. Base can not be negative. Negative Hypotenuse Check will never hit.
-    //underTest = new Triangle(4, -9);
   }
+
+  @Test(expected=IllegalArgumentException.class)
+  public void shouldThrowExceptionForZeroBase() {
+    underTest = new Triangle(0, 3);
+  }
+
+  // Hypotenuse must be greater than base. Base can not be zero or negative. Zero or negative Hypotenuse Check will never hit.
 
   @Test
   public void shouldReturnCorrectCalculatedArea(){

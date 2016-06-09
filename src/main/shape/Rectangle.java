@@ -8,7 +8,7 @@ public class Rectangle extends Shape{
    * @param width The width of the rectangle equal on two sides.
    */
   public Rectangle(int length, int width) {
-    if(length<0 || width<0){
+    if(length<=0 || width<=0){
       throw new IllegalArgumentException("length and width must be positive integers");
     } else {
       sides = new int[]{length, width};

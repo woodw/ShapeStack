@@ -16,6 +16,11 @@ public class SquareTest {
     underTest = new Square(-2);
   }
 
+  @Test(expected=IllegalArgumentException.class)
+  public void shouldThrowExceptionForZeroLength() {
+    underTest = new Square(0);
+  }
+
   @Test
   public void shouldReturnCorrectCalculatedArea(){
     underTest = new Square(4);

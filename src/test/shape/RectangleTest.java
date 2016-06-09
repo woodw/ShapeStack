@@ -21,6 +21,16 @@ public class RectangleTest {
     underTest = new Rectangle(5, -5);
   }
 
+  @Test(expected=IllegalArgumentException.class)
+  public void shouldThrowExceptionForZeroLength() {
+    underTest = new Rectangle(0, 3);
+  }
+
+  @Test(expected=IllegalArgumentException.class)
+  public void shouldThrowExceptionForZeroWidth() {
+    underTest = new Rectangle(9, 0);
+  }
+
   @Test
   public void shouldReturnCorrectCalculatedArea(){
     underTest = new Rectangle(2, 4);

@@ -16,7 +16,7 @@ public class Triangle extends Shape{
     if(sideTwoThree<=sideOne) {
       throw new IllegalArgumentException("hypotenuse needs to be greater than 1/2 the base: " + sideOne);
     } else
-      if(sideOne<0 || sideTwoThree<0){
+      if(sideOne<=0){
         throw new IllegalArgumentException("lengths must be positive integers");
       } else {
       sides = new int[]{sideOne, sideTwoThree};
