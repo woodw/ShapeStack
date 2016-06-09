@@ -21,11 +21,11 @@ public class Circle extends Shape{
   * diameter = r*2
   * */
   private void setArea(){
-    shapeArea = Math.PI*Math.pow((diameter/2),2);
+    area = Math.PI*Math.pow((diameter/2),2);
   }
 
   public double getArea() {
-    return shapeArea;
+    return area;
   }
 
   public String toString(){

@@ -7,8 +7,7 @@ package shape;
 
 public abstract class Shape implements Comparable<Shape>{
   //re-used variable for sub-classes
-  protected double shapeArea;
-  protected int[] sides;
+  protected double area;
 
   public int compareTo(Shape s){
     if(getArea()==s.getArea()){

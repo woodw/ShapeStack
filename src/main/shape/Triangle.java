@@ -6,21 +6,24 @@ import java.lang.annotation.Documented;
  * Created by billwood on 6/1/16.
  */
 public class Triangle extends Shape{
+  private int base;
+  private int identicalSides;
 
   /**
    * Creates a new triangle based on two values
-   * @param sideOne The base of our Isoceles triangle
-   * @param sideTwoThree the identical left and right sides of our Isoceles triangle
+   * @param newBase The base of our Isoceles triangle
+   * @param newIdenticalSides the identical left and right sides of our Isoceles triangle
    */
-  public Triangle(int sideOne, int sideTwoThree) {
-    if(sideTwoThree<=sideOne) {
-      throw new IllegalArgumentException("hypotenuse needs to be greater than 1/2 the base: " + sideOne);
+  public Triangle(int newBase, int newIdenticalSides) {
+    if(newIdenticalSides<=newBase) {
+      throw new IllegalArgumentException("hypotenuse needs to be greater than 1/2 the base: " + newBase);
     } else
-      if(sideOne<=0){
+      if(newBase<=0){
         throw new IllegalArgumentException("lengths must be positive integers");
       } else {
-      sides = new int[]{sideOne, sideTwoThree};
-      setArea();
+        base = newBase;
+        identicalSides = newIdenticalSides;
+        setArea();
     }
   }
 
@@ -32,14 +35,14 @@ public class Triangle extends Shape{
   * Area: length * width
   * */
   private void setArea(){
-    double _sideA = sides[0]/2;
-    double _sideC = sides[1];
+    double _sideA = base/2;
+    double _sideC = identicalSides;
     double _sideB = Math.sqrt(Math.pow(_sideC, 2)-Math.pow(_sideA, 2));
-    shapeArea = _sideA*_sideB;
+    area = _sideA*_sideB;
   }
 
   public double getArea() {
-    return shapeArea;
+    return area;
   }
 
   public String toString(){

@@ -1,27 +1,30 @@
 package shape;
 
 public class Rectangle extends Shape{
+  private int length;
+  private int width;
 
   /**
    * Creates a new rectangle based on two values
-   * @param length The length of the rectangle equal on two sides.
-   * @param width The width of the rectangle equal on two sides.
+   * @param newLength The new length of the rectangle equal on two sides.
+   * @param newWidth The new width of the rectangle equal on two sides.
    */
-  public Rectangle(int length, int width) {
-    if(length<=0 || width<=0){
+  public Rectangle(int newLength, int newWidth) {
+    if(newLength<=0 || newWidth<=0){
       throw new IllegalArgumentException("length and width must be positive integers");
     } else {
-      sides = new int[]{length, width};
+      length = newLength;
+      width = newWidth;
       setArea();
     }
   }
 
   private void setArea(){
-    shapeArea = sides[0]*sides[1];
+    area = length*width;
   }
 
   public double getArea() {
-    return shapeArea;
+    return area;
   }
 
   public String toString(){
