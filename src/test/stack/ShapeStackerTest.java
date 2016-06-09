@@ -24,7 +24,7 @@ public class ShapeStackerTest {
   }
 
   @Test
-  public void testPopConstructorPasses() throws Exception{
+  public void shouldConstructStackWithShapes() throws Exception{
     Collections.addAll(newStack, new Square(4), new Triangle(4, 10), new Circle(7), new Rectangle(2, 4));
     underTest = new ShapeStacker(newStack);
 
@@ -32,7 +32,7 @@ public class ShapeStackerTest {
   }
 
   @Test
-  public void testNullConstructorPasses() throws Exception{
+  public void shouldConstructEmptyStack() throws Exception{
     underTest = new ShapeStacker();
 
     //Based on the requirements I do not need to pop or push individual stack shapes.
@@ -40,9 +40,17 @@ public class ShapeStackerTest {
   }
 
   @Test
-  public void testCreateNewStack(){
+  public void shouldMaintainLocalStack(){
+    Collections.addAll(newStack, new Square(4), new Triangle(4, 10), new Circle(7), new Rectangle(2, 4));
+    underTest = new ShapeStacker(newStack);
+    Collections.addAll(newStack, new Circle(2));
+
+    assertEquals(4,underTest.getStack().size());
+  }
+
+  @Test
+  public void shouldAllowNewStack(){
     underTest = new ShapeStacker();
-    assertNull(underTest.getStack());
 
     Collections.addAll(newStack, new Square(4), new Triangle(4, 10), new Rectangle(2, 4));
     underTest.setStack(newStack);
@@ -50,21 +58,42 @@ public class ShapeStackerTest {
   }
 
   @Test
-  public void testPrintStack(){
+  public void shouldNotStackEmptyStack(){
+    underTest = new ShapeStacker();
+    assertEquals("No Shapes to Stack", underTest.stack());
+  }
+
+  @Test
+  public void shouldDisplayNoShapesOnEmptyStack(){
+    underTest = new ShapeStacker();
+    assertEquals("No Shapes", underTest.toString());
+  }
+
+  @Test
+  public void shouldCorrectlySortTSC(){
     Collections.addAll(newStack, new Square(4), new Circle(4), new Triangle(4, 10));
     underTest = new ShapeStacker(newStack);
     assertEquals("T[S[C]]", underTest.stack());
+  }
 
-    newStack.clear();
+  @Test
+  public void shouldCorrectlySortCSR(){
     Collections.addAll(newStack, new Square(4), new Circle(6), new Rectangle(2, 4));
+    underTest = new ShapeStacker(newStack);
     assertEquals("C[S[R]]", underTest.stack());
+  }
 
-    newStack.clear();
+  @Test
+  public void shouldCorrectlySortCT(){
     Collections.addAll(newStack, new Triangle(4, 10), new Circle(20));
+    underTest = new ShapeStacker(newStack);
     assertEquals("C[T]", underTest.stack());
+  }
 
-    newStack.clear();
+  @Test
+  public void shouldAllowFirstInSortForEqualArea(){
     Collections.addAll(newStack, new Square(4), new Rectangle(4, 4));
+    underTest = new ShapeStacker(newStack);
     assertTrue(underTest.stack().equals("R[S]")||underTest.stack().equals("S[R]"));
   }
 }

@@ -15,7 +15,7 @@ public class ShapeStacker {
   private List<Shape> theStack;
 
   public ShapeStacker(List<Shape> newShapes) {
-    theStack = newShapes;
+    setStack(newShapes);
   }
 
   public ShapeStacker() {
@@ -26,25 +26,30 @@ public class ShapeStacker {
   }
 
   public void setStack(List<Shape> newStack) {
-    theStack = newStack;
+    theStack = new ArrayList<Shape>(newStack);
   }
 
   public String stack() {
-    Collections.sort(theStack);
-    return this.toString();
+    if(theStack!=null){
+      Collections.sort(theStack);
+      return this.toString();
+    }
+      return "No Shapes to Stack";
   }
 
   public String toString(){
-    String stackString = "";
-    for(Shape item : theStack){
-      if(stackString.length()>0){
-        stackString = stackString.replace("[]", String.format("[%s]", item.toString()));
+    if(theStack!=null) {
+      String stackString = "";
+      for (Shape item : theStack) {
+        if (stackString.length() > 0) {
+          stackString = stackString.replace("[]", String.format("[%s]", item.toString()));
+        } else {
+          stackString = item.toString();
+        }
       }
-      else{
-        stackString = item.toString();
-      }
+      stackString = stackString.replace("[]", "");
+      return stackString;
     }
-    stackString = stackString.replace("[]","");
-    return stackString;
+    return "No Shapes";
   }
 }
