@@ -41,7 +41,7 @@ I was able to get together with java developers today from Impact Radius and the
 -modify JUNIT test to use the undertest,mock,and stub items in standard practice.
 -look at moving sides variable to mid class for square, rectangle, triangle
 -decide if rectangle should be square... I could cut down on code this way.
--is there a mid class for circle.
+-is there a mid class for circle?
 -modify stack to instantiate its own array instead of pointing to array from the test.
 -assert getStack from empty constructor doesn't throw null pointer
 -decide how to represent shapes of similar type in the stack print
@@ -68,5 +68,7 @@ which will be resolved.
 
 *I have decided to not allow zero for length. there is a bit of a pickle here... my shape lengths are whole numbers.
 technically .3 for length would be 0 in length. Semantics I guess. The kata refers to int values are arguments.
+
+* A square is a rhombus but also is a rectangle.
 
 
