@@ -71,4 +71,13 @@ technically .3 for length would be 0 in length. Semantics I guess. The kata refe
 
 * A square is a rhombus but also is a rectangle.
 
+? So here we are with the last item... I have the desire to know which item was in the collection first.
+so S1:2 and S2:4 will stack and print to S2[S1].
+I know that a shape will not know where it was on the list.
+before the collection sorts I need to know the position of each item.
+I also need to know which subclass shapes are in the list... so if I have S S T R R I should have S1[S2[T[R1[R2]]]]
+HashMap?
+What is the way to determine the amount of times a subclass appears in a collection without iterating through it.
+Or storing a seperate list.
+
 
