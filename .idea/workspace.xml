@@ -3,7 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="957a79b0-6ade-4d34-81d2-06bf3df3ca9d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/shape/Circle.java" afterPath="$PROJECT_DIR$/src/main/shape/Circle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/shape/Rectangle.java" afterPath="$PROJECT_DIR$/src/main/shape/Rectangle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/shape/Shape.java" afterPath="$PROJECT_DIR$/src/main/shape/Shape.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/shape/Square.java" afterPath="$PROJECT_DIR$/src/main/shape/Square.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/shape/Triangle.java" afterPath="$PROJECT_DIR$/src/main/shape/Triangle.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/stack/ShapeStacker.java" afterPath="$PROJECT_DIR$/src/main/stack/ShapeStacker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/shape/CircleTest.java" afterPath="$PROJECT_DIR$/src/test/shape/CircleTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/shape/RectangleTest.java" afterPath="$PROJECT_DIR$/src/test/shape/RectangleTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/shape/SquareTest.java" afterPath="$PROJECT_DIR$/src/test/shape/SquareTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/shape/TriangleTest.java" afterPath="$PROJECT_DIR$/src/test/shape/TriangleTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/stack/ShapeStackerTest.java" afterPath="$PROJECT_DIR$/src/test/stack/ShapeStackerTest.java" />
     </list>
     <ignored path="ShapeStack.iws" />
@@ -26,21 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ScratchPad" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScratchPad">
+      <file leaf-file-name="Circle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/shape/Circle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="71" column="48" selection-start-line="71" selection-start-column="48" selection-end-line="71" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShapeStackerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/stack/ShapeStackerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+            <state relative-caret-position="405">
+              <caret line="31" column="43" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -49,15 +48,10 @@
       <file leaf-file-name="ShapeStacker.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/stack/ShapeStacker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+            <state relative-caret-position="120">
+              <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
               <folding>
-                <element signature="e#319#320#0" expanded="true" />
-                <element signature="e#348#349#0" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
-                <element signature="e#487#488#0" expanded="true" />
-                <element signature="e#538#539#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,18 +87,19 @@
         <option value="$PROJECT_DIR$/src/main/shape/Main.java" />
         <option value="$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/test/shape/RectangleTest.java" />
+        <option value="$PROJECT_DIR$/ScratchPad" />
+        <option value="$PROJECT_DIR$/src/main/shape/Circle.java" />
+        <option value="$PROJECT_DIR$/src/main/shape/Rectangle.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/test/shape/CircleTest.java" />
         <option value="$PROJECT_DIR$/src/test/shape/TriangleTest.java" />
-        <option value="$PROJECT_DIR$/ScratchPad" />
-        <option value="$PROJECT_DIR$/src/main/shape/Square.java" />
         <option value="$PROJECT_DIR$/src/test/shape/SquareTest.java" />
-        <option value="$PROJECT_DIR$/src/main/shape/Shape.java" />
-        <option value="$PROJECT_DIR$/src/main/shape/Rectangle.java" />
-        <option value="$PROJECT_DIR$/src/main/shape/Circle.java" />
+        <option value="$PROJECT_DIR$/src/test/shape/RectangleTest.java" />
+        <option value="$PROJECT_DIR$/src/main/shape/Square.java" />
         <option value="$PROJECT_DIR$/src/main/shape/Triangle.java" />
-        <option value="$PROJECT_DIR$/src/main/stack/ShapeStacker.java" />
         <option value="$PROJECT_DIR$/src/test/stack/ShapeStackerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/shape/Shape.java" />
+        <option value="$PROJECT_DIR$/src/main/stack/ShapeStacker.java" />
       </list>
     </option>
   </component>
@@ -245,6 +240,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShapeStack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShapeStack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -302,6 +311,58 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ShapeStackerTest.shouldShowListOrderForLikeShapes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ShapeStack" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="stack" />
+      <option name="MAIN_CLASS_NAME" value="stack.ShapeStackerTest" />
+      <option name="METHOD_NAME" value="shouldShowListOrderForLikeShapes" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TriangleTest.shouldThrowExceptionForSmallerHypotenuse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="shape.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ShapeStack" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="shape" />
+      <option name="MAIN_CLASS_NAME" value="shape.TriangleTest" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionForSmallerHypotenuse" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -569,12 +630,16 @@
       <setting name="rowsRange" value="" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in ShapeStack" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ShapeStackerTest.shouldShowListOrderForLikeShapes" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TriangleTest.shouldThrowExceptionForSmallerHypotenuse" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="3">
         <item index="0" class="java.lang.String" itemvalue="JUnit.All in ShapeStack" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TriangleTest.shouldThrowExceptionForSmallerHypotenuse" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ShapeStackerTest.shouldShowListOrderForLikeShapes" />
       </list>
     </recent_temporary>
   </component>
@@ -767,39 +832,53 @@
       <option name="project" value="LOCAL" />
       <updated>1465441478521</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Fixed issue with ShapeStacker pointing to passed List. Refactored assert names. Added Asserts for calling stack and toString on empty ShapeStacker.">
+      <created>1465443507562</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1465443507562</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Some additional thoughts">
+      <created>1465446201714</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1465446201714</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_ShapeStack - 2016.06.08 at 23h 08m 16s.xml">
+    <history-entry file="All_in_ShapeStack - 2016.06.09 at 15h 22m 10s.xml">
       <configuration name="All in ShapeStack" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ShapeStack - 2016.06.08 at 23h 08m 47s.xml">
+    <history-entry file="All_in_ShapeStack - 2016.06.09 at 15h 23m 59s.xml">
       <configuration name="All in ShapeStack" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ShapeStack - 2016.06.08 at 23h 14m 33s.xml">
+    <history-entry file="All_in_ShapeStack - 2016.06.09 at 15h 24m 18s.xml">
       <configuration name="All in ShapeStack" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ShapeStack - 2016.06.08 at 23h 19m 05s.xml">
+    <history-entry file="All_in_ShapeStack - 2016.06.09 at 15h 28m 46s.xml">
       <configuration name="All in ShapeStack" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ShapeStack - 2016.06.08 at 23h 20m 42s.xml">
+    <history-entry file="All_in_ShapeStack - 2016.06.09 at 15h 28m 51s.xml">
       <configuration name="All in ShapeStack" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ShapeStack - 2016.06.08 at 23h 21m 59s.xml">
+    <history-entry file="All_in_ShapeStack - 2016.06.09 at 15h 58m 29s.xml">
       <configuration name="All in ShapeStack" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ShapeStack - 2016.06.08 at 23h 26m 09s.xml">
+    <history-entry file="All_in_ShapeStack - 2016.06.09 at 15h 58m 32s.xml">
       <configuration name="All in ShapeStack" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ShapeStack - 2016.06.08 at 23h 28m 53s.xml">
-      <configuration name="All in ShapeStack" configurationId="JUnit" />
+    <history-entry file="TriangleTest_shouldThrowExceptionForSmallerHypotenuse - 2016.06.09 at 15h 23m 13s.xml">
+      <configuration name="TriangleTest.shouldThrowExceptionForSmallerHypotenuse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ShapeStack - 2016.06.08 at 23h 33m 27s.xml">
-      <configuration name="All in ShapeStack" configurationId="JUnit" />
+    <history-entry file="TriangleTest_shouldThrowExceptionForSmallerHypotenuse - 2016.06.09 at 15h 23m 45s.xml">
+      <configuration name="TriangleTest.shouldThrowExceptionForSmallerHypotenuse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_ShapeStack - 2016.06.08 at 23h 36m 09s.xml">
-      <configuration name="All in ShapeStack" configurationId="JUnit" />
+    <history-entry file="TriangleTest_shouldThrowExceptionForSmallerHypotenuse - 2016.06.09 at 15h 23m 51s.xml">
+      <configuration name="TriangleTest.shouldThrowExceptionForSmallerHypotenuse" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -853,8 +932,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Square object with Test to verify surface area is calculated correctly" />
-    <MESSAGE value="Added Rectangle object with Test to verify surface area is calculated correctly" />
     <MESSAGE value="Added Triangle object with Test to verify surface area is calculated correctly" />
     <MESSAGE value="Added Circle object with Test to verify surface area is calculated correctly" />
     <MESSAGE value="Created an Abstract Class so I can add Shapes to a general Shape list." />
@@ -878,42 +955,25 @@
     <MESSAGE value="Square extends Rectangle. Square Tests removed that are redundant with rectangle tests" />
     <MESSAGE value="Reverting Square Test changes. Tests for subclasses are commonly maintained incase of a new override in the furture." />
     <MESSAGE value="Removed int[] sides from superClass shape. Assign specific values for supclass shapes. Length and width for rectangle and square. Base and hypotenuse for triangle. Diameter remains for circle." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed int[] sides from superClass shape. Assign specific values for supclass shapes. Length and width for rectangle and square. Base and hypotenuse for triangle. Diameter remains for circle." />
+    <MESSAGE value="Fixed issue with ShapeStacker pointing to passed List. Refactored assert names. Added Asserts for calling stack and toString on empty ShapeStacker." />
+    <MESSAGE value="Some additional thoughts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some additional thoughts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="33" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="((java.util.ArrayList)((ShapeStacker)this).theStack).get(0)" custom="stack.ShapeStacker,java.util.ArrayList" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/shape/TriangleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/shape/Square.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
-          <folding>
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/shape/Shape.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1030,20 +1090,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="5397" column="30" selection-start-line="5397" selection-start-column="30" selection-end-line="5397" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="492" column="9" selection-start-line="492" selection-start-column="9" selection-end-line="492" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
@@ -1087,13 +1133,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ShapeStack.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1149,14 +1188,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/junit-4.12-sources.jar!/org/junit/internal/runners/statements/ExpectException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ideaLibSources/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4470">
@@ -1177,6 +1208,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1635">
           <caret line="126" column="19" selection-start-line="126" selection-start-column="19" selection-end-line="126" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1208,104 +1240,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="2375" column="30" selection-start-line="2375" selection-start-column="30" selection-end-line="2375" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="730" column="27" selection-start-line="730" selection-start-column="27" selection-end-line="730" selection-end-column="27" />
+          <folding>
+            <element signature="e#33104#33105#0" expanded="true" />
+            <element signature="e#33178#33179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScratchPad">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7113">
+          <caret line="738" column="0" selection-start-line="738" selection-start-column="0" selection-end-line="738" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/shape/CircleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        <state relative-caret-position="276">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/shape/SquareTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
           <folding>
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/shape/RectangleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-          <folding>
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/shape/TriangleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/shape/Square.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/shape/SquareTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/shape/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="381">
+          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/shape/Rectangle.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/shape/Circle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/shape/Shape.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScratchPad">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="71" column="48" selection-start-line="71" selection-start-column="48" selection-end-line="71" selection-end-column="48" />
+        <state relative-caret-position="287">
+          <caret line="553" column="13" selection-start-line="553" selection-start-column="13" selection-end-line="553" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1318,25 +1325,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.ideaLibSources/junit-4.12-sources.jar!/org/junit/internal/runners/statements/ExpectException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/stack/ShapeStackerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+        <state relative-caret-position="111">
+          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/shape/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="92" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="92" />
+          <folding>
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/shape/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/shape/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-129">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/shape/TriangleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-39">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/shape/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/shape/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="31" column="43" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/stack/ShapeStacker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+        <state relative-caret-position="120">
+          <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
           <folding>
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

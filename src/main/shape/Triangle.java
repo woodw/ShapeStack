@@ -15,7 +15,7 @@ public class Triangle extends Shape{
    * @param newIdenticalSides the identical left and right sides of our Isoceles triangle
    */
   public Triangle(int newBase, int newIdenticalSides) {
-    if(newIdenticalSides<=newBase) {
+    if(newIdenticalSides<=(newBase/2)) {
       throw new IllegalArgumentException("hypotenuse needs to be greater than 1/2 the base: " + newBase);
     } else
       if(newBase<=0){
@@ -41,11 +41,10 @@ public class Triangle extends Shape{
     area = _sideA*_sideB;
   }
 
-  public double getArea() {
-    return area;
-  }
-
+  @Override
   public String toString(){
     return "T[]";
   }
+
+  public String getType(){return "Triangle";}
 }

@@ -30,4 +30,10 @@ public class CircleTest {
     assertEquals(12.566370614359172,underTest.getArea(),0);
   }
 
+  @Test
+  public void shouldBeOfTypeCircle(){
+    underTest = new Circle(2);
+    assertEquals("Circle",underTest.getType());
+  }
+
 }

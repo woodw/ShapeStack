@@ -21,6 +21,14 @@ public class ShapeStackerTest {
   @Before
   public void setUp() throws Exception {
     newStack = new ArrayList<Shape>();
+
+    String one = "fish";
+    String two = "trees";
+    int a = two.hashCode();
+    two = "lake";
+    int b = two.hashCode();
+    b = two.hashCode();
+
   }
 
   @Test
@@ -91,9 +99,30 @@ public class ShapeStackerTest {
   }
 
   @Test
-  public void shouldAllowFirstInSortForEqualArea(){
+  public void shouldCorrectlySortRectangleFirstRS(){
+    Collections.addAll(newStack, new Rectangle(4, 4), new Square(4));
+    underTest = new ShapeStacker(newStack);
+    assertTrue(underTest.stack().equals("R[S]"));
+  }
+
+  @Test
+  public void shouldCorrectlySortSquareFirstSR(){
     Collections.addAll(newStack, new Square(4), new Rectangle(4, 4));
     underTest = new ShapeStacker(newStack);
-    assertTrue(underTest.stack().equals("R[S]")||underTest.stack().equals("S[R]"));
+    assertTrue(underTest.stack().equals("S[R]"));
+  }
+
+  @Test
+  public void shouldShowListOrderForLikeShapes(){
+    Collections.addAll(newStack, new Square(4), new Square(5));
+    underTest = new ShapeStacker(newStack);
+    assertEquals("S2[S1]", underTest.stack());
+  }
+
+  @Test
+  public void shouldShowListOrderForMultipleLikeShapes(){
+    Collections.addAll(newStack, new Square(4), new Triangle(6,5), new Rectangle(1,11), new Rectangle(10,10), new Square(5));
+    underTest = new ShapeStacker(newStack);
+    assertEquals("R2[S2[S1[T[R1]]]]", underTest.stack());
   }
 }

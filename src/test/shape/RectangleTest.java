@@ -38,4 +38,11 @@ public class RectangleTest {
     underTest = new Rectangle(10, 4);
     assertEquals(40.0,underTest.getArea(),0);
   }
+
+  @Test
+  public void shouldBeOfTypeRectangle(){
+    underTest = new Rectangle(5, 2);
+    assertEquals("Rectangle",underTest.getType());
+  }
+
 }

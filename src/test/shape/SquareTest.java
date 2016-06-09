@@ -29,4 +29,9 @@ public class SquareTest {
     assertEquals(100.0,underTest.getArea(),0);
   }
 
+  @Test
+  public void shouldBeOfTypeSquare(){
+    underTest = new Square(5);
+    assertEquals("Square",underTest.getType());
+  }
 }

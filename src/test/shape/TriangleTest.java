@@ -37,4 +37,9 @@ public class TriangleTest {
     assertEquals(25.45584412271571,underTest.getArea(),0);
   }
 
+  @Test
+  public void shouldBeOfTypeTriangle(){
+    underTest = new Triangle(3, 13);
+    assertEquals("Triangle",underTest.getType());
+  }
 }

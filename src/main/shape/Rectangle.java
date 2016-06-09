@@ -23,11 +23,10 @@ public class Rectangle extends Shape{
     area = length*width;
   }
 
-  public double getArea() {
-    return area;
-  }
-
+  @Override
   public String toString(){
     return "R[]";
   }
+
+  public String getType(){return "Rectangle";}
 }

@@ -24,11 +24,10 @@ public class Circle extends Shape{
     area = Math.PI*Math.pow((diameter/2),2);
   }
 
-  public double getArea() {
-    return area;
-  }
-
+  @Override
   public String toString(){
     return "C[]";
   }
+
+  public String getType(){return "Circle";}
 }

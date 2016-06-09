@@ -15,4 +15,7 @@ public class Square extends Rectangle{
   public String toString(){
     return "S[]";
   }
+
+  @Override
+  public String getType(){return "Square";}
 }
