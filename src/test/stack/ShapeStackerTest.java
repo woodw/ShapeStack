@@ -15,56 +15,56 @@ import static org.junit.Assert.*;
  * Created by billwood on 6/1/16.
  */
 public class ShapeStackerTest {
-  public ShapeStacker mockShapeStacker;
-  public List<Shape> newShapes;
+  private ShapeStacker underTest;
+  private List<Shape> newStack;
 
   @Before
   public void setUp() throws Exception {
-    newShapes = new ArrayList<Shape>();
+    newStack = new ArrayList<Shape>();
   }
 
   @Test
   public void testPopConstructorPasses() throws Exception{
-    Collections.addAll(newShapes, new Square(4), new Triangle(4, 10), new Circle(7), new Rectangle(2, 4));
-    mockShapeStacker = new ShapeStacker(newShapes);
+    Collections.addAll(newStack, new Square(4), new Triangle(4, 10), new Circle(7), new Rectangle(2, 4));
+    underTest = new ShapeStacker(newStack);
 
-    assertEquals(4,mockShapeStacker.getStack().size());
+    assertEquals(4,underTest.getStack().size());
   }
 
   @Test
   public void testNullConstructorPasses() throws Exception{
-    mockShapeStacker = new ShapeStacker();
+    underTest = new ShapeStacker();
 
     //Based on the requirements I do not need to pop or push individual stack shapes.
-    assertNull(mockShapeStacker.getStack());
+    assertNull(underTest.getStack());
   }
 
   @Test
   public void testCreateNewStack(){
-    mockShapeStacker = new ShapeStacker();
-    assertNull(mockShapeStacker.getStack());
+    underTest = new ShapeStacker();
+    assertNull(underTest.getStack());
 
-    Collections.addAll(newShapes, new Square(4), new Triangle(4, 10), new Rectangle(2, 4));
-    mockShapeStacker.setStack(newShapes);
-    assertEquals(3,mockShapeStacker.getStack().size());
+    Collections.addAll(newStack, new Square(4), new Triangle(4, 10), new Rectangle(2, 4));
+    underTest.setStack(newStack);
+    assertEquals(3,underTest.getStack().size());
   }
 
   @Test
   public void testPrintStack(){
-    Collections.addAll(newShapes, new Square(4), new Circle(4), new Triangle(4, 10));
-    mockShapeStacker = new ShapeStacker(newShapes);
-    assertEquals("T[S[C]]", mockShapeStacker.stack());
+    Collections.addAll(newStack, new Square(4), new Circle(4), new Triangle(4, 10));
+    underTest = new ShapeStacker(newStack);
+    assertEquals("T[S[C]]", underTest.stack());
 
-    newShapes.clear();
-    Collections.addAll(newShapes, new Square(4), new Circle(6), new Rectangle(2, 4));
-    assertEquals("C[S[R]]", mockShapeStacker.stack());
+    newStack.clear();
+    Collections.addAll(newStack, new Square(4), new Circle(6), new Rectangle(2, 4));
+    assertEquals("C[S[R]]", underTest.stack());
 
-    newShapes.clear();
-    Collections.addAll(newShapes, new Triangle(4, 10), new Circle(20));
-    assertEquals("C[T]", mockShapeStacker.stack());
+    newStack.clear();
+    Collections.addAll(newStack, new Triangle(4, 10), new Circle(20));
+    assertEquals("C[T]", underTest.stack());
 
-    newShapes.clear();
-    Collections.addAll(newShapes, new Square(4), new Rectangle(4, 4));
-    assertTrue(mockShapeStacker.stack().equals("R[S]")||mockShapeStacker.stack().equals("S[R]"));
+    newStack.clear();
+    Collections.addAll(newStack, new Square(4), new Rectangle(4, 4));
+    assertTrue(underTest.stack().equals("R[S]")||underTest.stack().equals("S[R]"));
   }
 }
