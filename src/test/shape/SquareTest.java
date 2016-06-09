@@ -10,4 +10,23 @@ import static org.junit.Assert.*;
  */
 public class SquareTest {
   private Square underTest;
+
+  @Test(expected=IllegalArgumentException.class)
+  public void shouldThrowExceptionForNegativeLength() {
+    underTest = new Square(-2);
+  }
+
+  @Test(expected=IllegalArgumentException.class)
+  public void shouldThrowExceptionForZeroLength() {
+    underTest = new Square(0);
+  }
+
+  @Test
+  public void shouldReturnCorrectCalculatedArea(){
+    underTest = new Square(4);
+    assertEquals(16.0,underTest.getArea(),0);
+    underTest = new Square(10);
+    assertEquals(100.0,underTest.getArea(),0);
+  }
+
 }
